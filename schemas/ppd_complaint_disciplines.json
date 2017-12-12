@@ -1,0 +1,35 @@
+{
+  "fields": [
+    {
+      "name": "cap_number",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "po_initials",
+      "type": "string"
+    },
+    {
+      "name": "po_race",
+      "type": "string"
+    },
+    {
+      "name": "po_sex",
+      "type": "string"
+    },
+    {
+      "name": "allegations_investigated",
+      "type": "string"
+    },
+    {
+      "name": "investigative_findings",
+      "type": "string"
+    },
+    {
+      "name": "pbi_determination",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "primaryKey": ["cap_number"],
+  "fields": [
+    {
+      "name": "cap_number",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "date_received",
+      "type": "datetime",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "dist_occurrence",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "general_cap_classification",
+      "type": "string"
+    },
+    {
+      "name": "summary",
+      "type": "string"
+    }
+  ]
+}
