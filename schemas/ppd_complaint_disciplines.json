@@ -28,7 +28,7 @@
       "type": "string"
     },
     {
-      "name": "pbi_determination",
+      "name": "disciplinary_findings",
       "type": "string"
     }
   ]

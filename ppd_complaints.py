@@ -18,7 +18,7 @@ disciplines_headers = {
     'PO SEX': 'po_sex',
     'Allegations Investigated': 'allegations_investigated',
     'Investigative Findings': 'investigative_findings',
-    'Disciplinary Findings': 'pbi_determination'
+    'Disciplinary Findings': 'disciplinary_findings'
 }
 
 def convert_date(input_date):
