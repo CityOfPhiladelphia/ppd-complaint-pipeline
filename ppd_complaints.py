@@ -21,6 +21,14 @@ disciplines_headers = {
     'Disciplinary Findings': 'disciplinary_findings'
 }
 
+complaintant_headers = {
+    'CAP Number': 'cap_number',
+    'COMPL_SEX': 'complaintant_sex',
+    'COMPL_RACE': 'complaintant_race',
+    'COMPL_AGE': 'complaintant_age',
+    'COMPL_INIT': 'complaintant_initials'
+}
+
 def convert_date(input_date):
     return arrow.get(input_date, 'M/D/YYYY').format('YYYY-MM-DDTHH:mm:ss') + 'Z'
 
@@ -28,7 +36,7 @@ def convert_date(input_date):
 def main():
     pass
 
-@main.command()
+@main.command('transform-complaints')
 @click.option('-f','--input-file', type=click.Path(exists=True))
 def transform_complaints(input_file):
     # input_file None defaults to stdin
@@ -40,7 +48,7 @@ def transform_complaints(input_file):
         .tocsv(encoding='utf-8')
     )
 
-@main.command()
+@main.command('transform-disciplines')
 @click.option('-f','--input-file', type=click.Path(exists=True))
 def transform_disciplines(input_file):
     # input_file None defaults to stdin
@@ -48,6 +56,17 @@ def transform_disciplines(input_file):
         petl
         .fromcsv(source=input_file, encoding='Windows-1252')
         .rename(disciplines_headers)
+        .tocsv(encoding='utf-8')
+    )
+
+@main.command('transform-complaintants')
+@click.option('-f','--input-file', type=click.Path(exists=True))
+def transform_complaintants(input_file):
+    # input_file None defaults to stdin
+    (
+        petl
+        .fromcsv(source=input_file, encoding='Windows-1252')
+        .rename(complaintant_headers)
         .tocsv(encoding='utf-8')
     )
 

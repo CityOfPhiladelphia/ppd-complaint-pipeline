@@ -1,0 +1,27 @@
+{
+  "fields": [
+    {
+      "name": "cap_number",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "complaintant_sex",
+      "type": "string"
+    },
+    {
+      "name": "complaintant_race",
+      "type": "string"
+    },
+    {
+      "name": "complaintant_age",
+      "type": "string"
+    },
+    {
+      "name": "complaintant_initials",
+      "type": "string"
+    }
+  ]
+}
