@@ -8,19 +8,19 @@
       }
     },
     {
-      "name": "complaintant_sex",
+      "name": "complainant_sex",
       "type": "string"
     },
     {
-      "name": "complaintant_race",
+      "name": "complainant_race",
       "type": "string"
     },
     {
-      "name": "complaintant_age",
+      "name": "complainant_age",
       "type": "string"
     },
     {
-      "name": "complaintant_initials",
+      "name": "complainant_initials",
       "type": "string"
     }
   ]
